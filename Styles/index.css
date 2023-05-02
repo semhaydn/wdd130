@@ -1,0 +1,39 @@
+/* Set default font and margin/padding for entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the main heading */
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 1em 0;
+  }
+  
+  /* Style the navigation links */
+  nav {
+    background-color: #f1f1f1;
+    padding: 0.5em;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 3px;
+  }
+  
+  nav a:hover {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
+  /* Set styles for active link */
+  nav a.active {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
