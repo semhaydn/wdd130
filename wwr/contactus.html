@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Wild Waters Rafting</title>
+  <link rel="stylesheet" href="styles\styles.css">
+</head>
+<body>
+  <header>
+    <a id="logo_link" href="index.html">
+      <img class="logo" src="images/wildwatersrarfting.png" alt="Wild Waters Rafting Logo">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="site-plan-rafting.html">Site Plan</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you. Please fill out the form below to get in touch with us.</p>
+
+    <form id="contact-form" action="submit-form.php" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 wildwatersrarfting - Semih Aydin</p>
+    <p><a href="site-plan-rafting.html">Site Plan</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+    <div class="social">
+      <a href="https://facebook.com/wildwatersrarfting" target="_blank">
+        <img src="images/facebook.png" alt="fb icon">
+      </a>
+      <a href="https://twitter.com/wildwatersrarfting" target="_blank">
+        <img src="images/twitter.png" alt="twitter icon">
+      </a>
+      <a href="https://instagram.com/wildwatersrarfting" target="_blank">
+        <img src="images/instagram.png" alt="instagram icon">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
