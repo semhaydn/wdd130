@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Wild Waters Rafting</title>
-  <link rel="stylesheet" href="styles\styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header>
@@ -24,7 +24,7 @@
     <h1>Contact Us</h1>
     <p>We'd love to hear from you. Please fill out the form below to get in touch with us.</p>
 
-    <form id="contact-form" action="submit-form.php" method="POST">
+    <form id="contact-form" action="#" method="POST">
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -37,8 +37,10 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Your message" required></textarea>
       </div>
-      <button type="submit">Submit</button>
+      <button id="submit-btn" type="submit">Submit</button>
     </form>
+
+    <div id="response"></div>
   </div>
 
   <footer>
@@ -57,5 +59,34 @@
       </a>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting
+
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      // Perform form validation here if needed
+      // ...
+
+      // Simulate form submission and show response
+      submitForm(name, email, message);
+    });
+
+    function submitForm(name, email, message) {
+      // Simulate form submission process
+      setTimeout(function() {
+        var responseElement = document.getElementById('response');
+        responseElement.innerText = 'Thank you, ' + name + '! We have received your message.';
+
+        // Clear form inputs after submission
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+      }, 1500); // Simulate a 1.5-second delay for demonstration purposes
+    }
+  </script>
 </body>
 </html>
