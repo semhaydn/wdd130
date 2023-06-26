@@ -1,55 +1,83 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <title>Balkanwatch</title>
-    <link type="text/css" rel="stylesheet" href="styles/style.css"> 
-  </head>
-  <body>
-      <header>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="news.html">News</a>
-          <a href="analysis.html">Analysis</a>
-          <a href="about.html">About</a>
-          <a href="site-plan.html">Site Plan</a>
-        </nav>
-      </header>
-    <main>
-      <section class="hero">
-        <hr>
+<head>
+  <meta charset="utf-8">
+  <title>Balkanwatch</title>
+  <link type="text/css" rel="stylesheet" href="styles/style.css"> 
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="news.html">News</a>
+      <a href="analysis.html">Analysis</a>
+      <a href="about.html">About</a>
+      <a href="site-plan.html">Site Plan</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
         <h1>Balkanwatch</h1>
-        <p>Stay informed about the latest news and events in the Balkan region</p>
-        <a href="news.html" class="btn">Read More</a>
-      </section>
-      <section class="featured-articles">
-        <h2>Featured Articles</h2>
-        
-        <div class="article">
-          
-          <img src="images\balkans_article_pict.jpg" alt="Article 1" width="400">
-          <h3>Unrest in Kosovo</h3>
-          <p>NATO member Turkey to send troops to Kosovo amid unrest in the north
-          </p>
-          <a href="#" class="btn">Read More</a>
+        <div class="newsletter-form">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form action="subscribe.php" method="POST"> 
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
-        <div class="article">
-          <img src="images\balkans.JPG" alt="Article 2" width="400">
-          <h3>Article Title 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="article">
-          <img src="images\pexels-brotin-biswas-518543.jpg" alt="Article 3" width="400">
-          <h3>Article Title 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#" class="btn">Read More</a>
-          <hr>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 Balkanwatch. All rights reserved.</p>
-    </footer>
-  </body>
-</html>
+      </div>
+    </section>
+    <section class="featured-articles-header">
+      <h2>Featured Articles</h2>
+    </section>
+    <section class="featured-articles">
+      <article>
+        <img src="images/balkans_article_pict.jpg" alt="Article 1" width="400">
+        <h3>Unrest in Kosovo</h3>
+        <p>NATO member Turkey to send troops to Kosovo amid unrest in the north</p>
+        <a href="#" class="btn">Read More</a>
+      </article>
+      <article>
+        <img src="images/balkans.JPG" alt="Article 2" width="400">
+        <h3>Article Title 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" class="btn">Read More</a>
+      </article>
+      <article>
+        <img src="images/pexels-brotin-biswas-518543.jpg" alt="Article 3" width="400">
+        <h3>Article Title 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" class="btn">Read More</a>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="/balkanwatch/images/Balkanwatch-1250.png" alt="Balkanwatch Logo">
+      </div>
+      <nav class="footer-navigation">
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">About</a>
+        <a href="#">Site Plan</a>
+      </nav>
+        <p class="footer-contact-info">info@balkanwatch.com</p>
+      </div>
+      <div class="footer-social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-bottom-text">&copy; 2023 Balkanwatch. All rights reserved. Designed By <a href="#" class="footer-bottom-link">Semih Aydin</a></p>
+    </div>
+  </footer>
+  
+  
+  
+  
+  
