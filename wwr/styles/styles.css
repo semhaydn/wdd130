@@ -40,23 +40,14 @@ width: 100px;
   z-index: -1;
 
 }
-
 #hero-msg {
   grid-column: 2/3;
   grid-row: 1/2;
   margin-top: 100px;
 }
 
-nav a {
-  text-align: center;
-  text-decoration: none;
-  color: #1764AB;
-  padding: 35px;
-}
-
 #hero-msg h1,
 #hero-msg h4 {
-  color: #1764AB;
   text-align: center;
   font-family: 'Roboto Condensed', 'Open Sans', 'Roboto', 'Roboto Condensed', sans-serif;
 }
@@ -72,27 +63,51 @@ main section {
 }
 
 body {
-  background-color: #eaf3fb;
+  background-color: var(#2196f);
   font-family: 'Roboto Condensed', 'Open Sans', 'Roboto',  sans-serif;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color:#;
+  background-color:none ;
   display: grid;
   grid-template-columns: 150px auto;
 }
 
 nav {
+  color: #131b22;
   display: flex;
   justify-content: space-around;
 }
 
-nav a:hover {
-  background-color: #1ca3e3;
-  color: #eaf3fb;
+nav a {
+  text-decoration: none;
+  color: #036fce;
+  padding: 10px;
+  position: relative;
 }
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #131b22;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
 
 .home-title,
 h4 {
