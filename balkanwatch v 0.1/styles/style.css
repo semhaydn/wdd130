@@ -240,7 +240,7 @@ nav a:hover {
 }
 
 .footer-logo {
-  width: 60px;
+  width: 250px;
 }
 
 .footer-links {
@@ -496,21 +496,49 @@ nav a:hover {
 
 /* Additional Styles for About Page */
 .about-section {
-  background-color: #f8f8f8;
-  padding: 60px 0;
-  text-align: center;
+  background-color: #f2f2f2;
+  padding: 80px 0;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-section img {
+  max-width: 100%;
+  height: auto;
 }
 
 .about-section h2 {
-  font-size: 28px;
+  font-size: 36px;
   color: #003366;
   margin-bottom: 20px;
 }
 
 .about-section p {
-  font-size: 16px;
+  font-size: 18px;
   color: #666;
-  line-height: 1.6;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-button {
+  display: inline-block;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about-button:hover {
+  background-color: var(--secondary-color);
+  color: #002244;
 }
 
 .team-section {
@@ -628,4 +656,52 @@ nav a:hover {
     margin-top: 10px;
     color: #333;
   }
+  
+  article.recap {
+    background-color: var(--secondary-color);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .recap-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  article.recap h2, article.recap h3 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-color);
+  }
+  
+  article.recap h2 {
+    font-size: 1.8em;
+  }
+  
+  article.recap h3 {
+    font-size: 1.4em;
+  }
+  
+  article.recap p {
+    color: var(--paragraph-color-on-color);
+    line-height: 1.5;
+  }
+  
+  article.recap a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    background-color: var(--nav-background-color);
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  article.recap a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+  
   
