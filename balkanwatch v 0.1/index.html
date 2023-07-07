@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Balkanwatch - Home</title>
   <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
@@ -16,8 +15,7 @@
       <a href="about.html">About</a>
       <a href="recaps.html">Recaps</a>
       <a href="contact.html">Contact</a>
-      <!-- The form -->
-      <form class="example" action="action_page.php">
+      <form class="example" action="action_page.php" method="get">
         <input type="text" placeholder="Search.." name="search">
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
@@ -41,38 +39,37 @@
       <div class="overview-image">
         <img src="images/balkans_article_pict.jpg" alt="Map of Balkans">
       </div>
-  </section>
-  <section class="recap-section">
-    <h3>Previous Weeks' Recaps</h3>
-    <div class="recap-list">
-      <a href="recap-week1.html">
-        <div class="recap-item">
-          <img src="images/recap-image.jpg" alt="Week 1 Recap">
-          <h4>Week 1 Recap</h4>
-          <p>Summary of the major news stories and events from Week 1.</p>
-        </div>
-      </a>
-          <a href="recap-week2.html">
-            <div class="recap-item">
-              <img src="images/recap-image2.jpg" alt="Week 2 Recap">
-              <h4>Week 2 Recap</h4>
-              <p>Summary of the major news stories and events from Week 2.</p>
-            </div>
-          </a>
-              <a href="recap-week3.html">
-                <div class="recap-item">
-                  <img src="images/recap-image3.jpg" alt="Week 3 Recap">
-                  <h4>Week 3 Recap</h4>
-                  <p>Summary of the major news stories and events from Week 3.</p>
-                </div>
-              </a>
-        <!-- Add more recap items as needed -->
+    </section>
+    <section class="recap-section">
+      <h3>Previous Weeks' Recaps</h3>
+      <div class="recap-list">
+        <a href="recap-week1.html">
+          <div class="recap-item">
+            <img src="images/recap-image.jpg" alt="Week 1 Recap">
+            <h4>Week 1 Recap</h4>
+            <p>Summary of the major news stories and events from Week 1.</p>
+          </div>
+        </a>
+        <a href="recap-week2.html">
+          <div class="recap-item">
+            <img src="images/recap-image2.jpg" alt="Week 2 Recap">
+            <h4>Week 2 Recap</h4>
+            <p>Summary of the major news stories and events from Week 2.</p>
+          </div>
+        </a>
+        <a href="recap-week3.html">
+          <div class="recap-item">
+            <img src="images/recap-image3.jpg" alt="Week 3 Recap">
+            <h4>Week 3 Recap</h4>
+            <p>Summary of the major news stories and events from Week 3.</p>
+          </div>
+        </a>
       </div>
     </section>
     <section class="newsletter-section">
       <h3>Stay Informed with Our Newsletter</h3>
       <p>Subscribe to our free newsletter and become part of our community of informed readers. By subscribing, you'll receive curated content, exclusive articles, and analysis straight to your inbox. Don't miss out on the latest news and valuable insights!</p>
-      <form>
+      <form action="newsletter.php" method="post">
         <label for="email">Email:</label>
         <input type="email" id="email" placeholder="Enter your email address" required>
         <button type="submit">Subscribe</button>
@@ -81,33 +78,26 @@
   </main>
   <footer class="footer">
     <div class="container">
-        <!-- Logo -->
-        <img class="footer-logo" src="images/Balkanwatch-1350.png" alt="Brand Logo">
-        <!-- Child Page Links -->
-        <div class="footer-links">
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="recaps.html">Recaps</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="site-plan.html">Site Plan</a></li>
-              <!-- add more as needed -->
-          </ul>
+      <img class="footer-logo" src="images/Balkanwatch-1350.png" alt="Brand Logo">
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="recaps.html">Recaps</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="site-plan.html">Site Plan</a></li>
+        </ul>
       </div>
-        <!-- Social Media Links -->
-        <div class="social-links">
-            <a href="http://www.facebook.com/yourpage"><i class="fab fa-facebook-f"></i></a>
-            <a href="http://www.twitter.com/yourpage"><i class="fab fa-twitter"></i></a>
-            <a href="http://www.instagram.com/yourpage"><i class="fab fa-instagram"></i></a>
-            <a href="http://www.linkedin.com/in/yourpage"><i class="fab fa-linkedin-in"></i></a>
-            <!-- add more as needed -->
-        </div>
-        <!-- Copyright -->
-        <div class="copyright">
-            <p>&copy; 2023 Your Brand. All rights reserved.</p>
-        </div>
+      <div class="social-links">
+        <a href="http://www.facebook.com/yourpage"><i class="fab fa-facebook-f"></i></a>
+        <a href="http://www.twitter.com/yourpage"><i class="fab fa-twitter"></i></a>
+        <a href="http://www.instagram.com/yourpage"><i class="fab fa-instagram"></i></a>
+        <a href="http://www.linkedin.com/in/yourpage"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Your Brand. All rights reserved.</p>
+      </div>
     </div>
-</footer>
-
+  </footer>
 </body>
 </html>
