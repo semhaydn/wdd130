@@ -19,7 +19,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, form, input, button, textarea, arti
 
 /* Typography */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--dark-text);
@@ -27,10 +27,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-left: 20px;
+  margin: auto; /* Added this line */
+  max-width: 1200px; /* Added this line, so that I can adjust the value as per my design */
+  padding: 0 20px; /* Added this line to add some space on the left and right side of the page */
 }
 
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-weight: bold;
 }
 
